@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://gauravthakur.dev'),
+  metadataBase: new URL('https://ai-engineer-portfolio-kappa.vercel.app'),
   openGraph: {
     title: 'Gaurav Thakur - AI Engineer Portfolio',
     description: 'I build voice-enabled AI agents, secure RAG chatbots, and automation systems that think, speak, and act with purpose — at scale.',
