@@ -166,15 +166,58 @@ Modify animations in:
 ## 🌐 Deployment
 
 The project is optimized for deployment on:
-- Vercel (recommended)
+- **Vercel** (recommended - free hosting)
 - Netlify
 - GitHub Pages
 - Any static hosting service
+
+### Deploy to Vercel (Free)
+
+#### Method 1: GitHub Integration (Recommended)
+1. **Push to GitHub:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: AI Engineer Portfolio"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/ai-portfolio.git
+   git push -u origin main
+   ```
+
+2. **Deploy on Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Sign up/Login with GitHub
+   - Click "New Project"
+   - Select your repository
+   - Click "Deploy" (auto-configured for Next.js)
+
+#### Method 2: Vercel CLI
+```bash
+# Install Vercel CLI
+npx vercel
+
+# Follow the prompts:
+# - Set up and deploy? Yes
+# - Which scope? Your account
+# - Link to existing project? No
+# - Project name? ai-engineer-portfolio
+# - Directory? ./
+# - Override settings? No
+
+# Deploy to production
+npx vercel --prod
+```
 
 ### Build for Production
 ```bash
 npm run build
 npm start
+```
+
+### Environment Variables (if needed)
+Create `.env.local` for local development:
+```env
+NEXT_PUBLIC_SITE_URL=https://your-domain.vercel.app
 ```
 
 ## 📄 License
