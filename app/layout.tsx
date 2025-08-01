@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     siteName: 'Gaurav Thakur Portfolio',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/gaurav-profile.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Gaurav Thakur - AI Engineer',
+      },
+    ],
   },
   robots: {
     index: true,

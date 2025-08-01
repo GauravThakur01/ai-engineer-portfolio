@@ -38,7 +38,7 @@ const Projects = () => {
       gradient: "from-blue-500 to-cyan-500",
       icon: "🎙️",
       metrics: [
-        { label: "Response Time", value: "< 15s" },
+        { label: "Response Time", value: "< 5s" },
         { label: "Accuracy", value: "95%" },
         { label: "Uptime", value: "99.9%" }
       ]

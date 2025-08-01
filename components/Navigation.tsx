@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
+import ProfileImage from '@/components/ProfileImage'
 import { 
   HiMenu, 
   HiX,
@@ -63,13 +64,12 @@ const Navigation = () => {
             className="flex items-center space-x-3"
           >
             <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-cyan-400/30">
-              <Image
-                src="/gaurav-profile.jpg"
-                alt="Gaurav Thakur"
+              <ProfileImage
                 width={40}
                 height={40}
                 className="object-cover"
                 priority
+                alt="Gaurav Thakur"
               />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">

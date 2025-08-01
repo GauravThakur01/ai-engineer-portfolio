@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { HiPlay, HiDownload, HiMail } from 'react-icons/hi'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import TypewriterEffect from 'typewriter-effect'
-import Image from 'next/image'
+import ProfileImage from '@/components/ProfileImage'
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false)
@@ -77,7 +77,7 @@ const Hero = () => {
               className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 h-24"
             >
               <span className="text-5xl sm:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-pink-600 bg-clip-text text-transparent mr-4">
-                I build
+                I Build
               </span>
               <br />
               <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
@@ -186,12 +186,12 @@ const Hero = () => {
                 className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-purple-600/20"></div>
-                <Image
-                  src="/gaurav-profile.jpg"
-                  alt="Gaurav Thakur - AI Engineer"
+                <ProfileImage
                   fill
                   className="object-cover"
                   priority
+                  alt="Gaurav Thakur - AI Engineer"
+                  sizes="(max-width: 768px) 320px, (max-width: 1024px) 384px, 384px"
                 />
               </motion.div>
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+    <style>
+        body { padding: 20px; font-family: Arial, sans-serif; }
+        .image-test { margin: 10px 0; }
+        img { max-width: 100px; max-height: 100px; margin: 5px; }
+        .status { padding: 5px; margin: 5px 0; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <h1>Image Loading Test</h1>
+    
+    <div class="image-test">
+        <h3>/gaurav-profile.jpg</h3>
+        <img id="img1" src="/gaurav-profile.jpg" alt="Gaurav Profile" />
+        <div id="status1" class="status">Loading...</div>
+    </div>
+    
+    <div class="image-test">
+        <h3>/profile-image.jpg</h3>
+        <img id="img2" src="/profile-image.jpg" alt="Profile Image" />
+        <div id="status2" class="status">Loading...</div>
+    </div>
+    
+    <div class="image-test">
+        <h3>/IMG_20230502_171318.jpeg</h3>
+        <img id="img3" src="/IMG_20230502_171318.jpeg" alt="IMG" />
+        <div id="status3" class="status">Loading...</div>
+    </div>
+
+    <script>
+        document.getElementById('img1').onload = () => {
+            document.getElementById('status1').textContent = 'Loaded successfully!';
+            document.getElementById('status1').className = 'status success';
+        };
+        document.getElementById('img1').onerror = () => {
+            document.getElementById('status1').textContent = 'Failed to load';
+            document.getElementById('status1').className = 'status error';
+        };
+
+        document.getElementById('img2').onload = () => {
+            document.getElementById('status2').textContent = 'Loaded successfully!';
+            document.getElementById('status2').className = 'status success';
+        };
+        document.getElementById('img2').onerror = () => {
+            document.getElementById('status2').textContent = 'Failed to load';
+            document.getElementById('status2').className = 'status error';
+        };
+
+        document.getElementById('img3').onload = () => {
+            document.getElementById('status3').textContent = 'Loaded successfully!';
+            document.getElementById('status3').className = 'status success';
+        };
+        document.getElementById('img3').onerror = () => {
+            document.getElementById('status3').textContent = 'Failed to load';
+            document.getElementById('status3').className = 'status error';
+        };
+    </script>
+</body>
+</html>
