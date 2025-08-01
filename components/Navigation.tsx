@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
-import ProfileImage from '@/components/ProfileImage'
+import ProfileImage from '@/components/ProfileImageImported'
 import { 
   HiMenu, 
   HiX,

@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { HiPlay, HiDownload, HiMail } from 'react-icons/hi'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import TypewriterEffect from 'typewriter-effect'
-import ProfileImage from '@/components/ProfileImage'
+import ProfileImage from '@/components/ProfileImageImported'
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false)
