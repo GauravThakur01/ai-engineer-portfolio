@@ -228,7 +228,7 @@ This project is for portfolio purposes. Feel free to use as inspiration for your
 
 - **Email**: GauravThakur2350@gmail.com
 - **Phone**: +91 7650941605
-- **LinkedIn**: [linkedin.com/in/gauravthakur](https://linkedin.com/in/gauravthakur)
+- **LinkedIn**: [linkedin.com/in/gaurav-thakur-91509923a](https://www.linkedin.com/in/gaurav-thakur-91509923a)
 - **GitHub**: [github.com/gauravThakur01](https://github.com/gauravThakur01)
 
 ---

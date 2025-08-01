@@ -79,7 +79,7 @@ const Contact = () => {
     {
       icon: FaLinkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/gauravthakur",
+      href: "https://www.linkedin.com/in/gaurav-thakur-91509923a",
       color: "hover:text-blue-600"
     },
     {

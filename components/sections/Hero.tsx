@@ -152,7 +152,7 @@ const Hero = () => {
             >
               {[
                 { Icon: FaGithub, href: "https://github.com/gauravThakur01", label: "GitHub" },
-                { Icon: FaLinkedin, href: "https://linkedin.com/in/gauravthakur", label: "LinkedIn" },
+                { Icon: FaLinkedin, href: "https://www.linkedin.com/in/gaurav-thakur-91509923a", label: "LinkedIn" },
                 { Icon: FaTwitter, href: "https://twitter.com/gauravthakur", label: "Twitter" },
               ].map(({ Icon, href, label }) => (
                 <motion.a
