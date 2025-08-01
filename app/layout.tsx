@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: 'AI That Listens. AI That Remembers. Building the future of conversational AI.',
     creator: '@gauravthakur',
     creatorId: '1467726470533754880',
-    images: ['/profile-image.jpg'],
+    images: ['/gaurav-profile.jpg'],
   },
 }
 

@@ -187,7 +187,7 @@ const Hero = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-purple-600/20"></div>
                 <Image
-                  src="/profile-image.jpg"
+                  src="/gaurav-profile.jpg"
                   alt="Gaurav Thakur - AI Engineer"
                   fill
                   className="object-cover"

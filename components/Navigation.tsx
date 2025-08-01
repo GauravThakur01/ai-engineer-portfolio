@@ -64,7 +64,7 @@ const Navigation = () => {
           >
             <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-cyan-400/30">
               <Image
-                src="/profile-image.jpg"
+                src="/gaurav-profile.jpg"
                 alt="Gaurav Thakur"
                 width={40}
                 height={40}
