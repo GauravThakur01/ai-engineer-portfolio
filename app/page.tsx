@@ -7,7 +7,6 @@ import Contact from '@/components/sections/Contact'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import ParticleBackground from '@/components/ui/ParticleBackground'
-import ConsoleLogger from '@/components/ConsoleLogger'
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <Innovation />
       <Contact />
       <Footer />
-      <ConsoleLogger />
     </main>
   )
 }
