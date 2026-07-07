@@ -4,9 +4,5 @@
     "app/**/*.tsx": {
       "maxDuration": 30
     }
-  },
-  "public": true,
-  "github": {
-    "enabled": false
   }
 }
