@@ -72,9 +72,14 @@ const Navigation = () => {
                 alt="Gaurav Thakur"
               />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Gaurav Thakur
-            </span>
+            <div className="flex flex-col leading-tight">
+              <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                Gaurav Thakur
+              </span>
+              <span className="hidden sm:inline text-[10px] tracking-widest uppercase text-gray-500 dark:text-gray-400">
+                Principal AI Architect · SKYTEK Cloud
+              </span>
+            </div>
           </motion.div>
 
           {/* Desktop Navigation */}

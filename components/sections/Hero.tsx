@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { HiPlay, HiDownload, HiMail } from 'react-icons/hi'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import TypewriterEffect from 'typewriter-effect'
 import ProfileImage from '@/components/ProfileImageImported'
 
@@ -66,7 +66,7 @@ const Hero = () => {
               className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/20 rounded-full mb-6"
             >
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></span>
-              <span className="text-gray-700 dark:text-gray-300 text-sm">Available for exciting AI projects</span>
+              <span className="text-gray-700 dark:text-gray-300 text-sm">Principal AI Architect · Head of AI Transformation · SKYTEK Cloud</span>
             </motion.div>
 
             {/* Typewriter Effect */}
@@ -77,19 +77,19 @@ const Hero = () => {
               className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 h-24"
             >
               <span className="text-5xl sm:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-pink-600 bg-clip-text text-transparent mr-4">
-                I Build
+                I ship
               </span>
               <br />
               <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                 <TypewriterEffect
                   options={{
                     strings: [
-                      'AI Voice Agents',
-                      'RAG Chatbots',
-                      'Prompt Engineering Solutions',
-                      'Gen AI Applications',
-                      'Conversational AI',
-                      'Smart Automation'
+                      'Enterprise AI Transformation',
+                      'End-to-End AI Platforms',
+                      'Agentic Systems in Production',
+                      'RAG & Knowledge Copilots',
+                      'AI Strategy → Deployment',
+                      'AI Centers of Excellence'
                     ],
                     autoStart: true,
                     loop: true,
@@ -108,11 +108,13 @@ const Hero = () => {
               className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl"
             >
               <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-                AI That Listens. AI That Remembers.
+                Business problem in. Production AI out.
               </span>
               <br />
-              I build intelligent voice agents and retrieval-augmented chatbots that listen like humans, 
-              respond like experts, and automate like machines.
+              I identify the problem worth solving, align the people who own it, then take the answer
+              <span className="text-gray-800 dark:text-gray-200 font-semibold"> end-to-end </span>
+              — strategy, architecture, build, deployment, and the team that runs it. Born in a
+              security-first MSP, deployed across every industry.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -129,7 +131,7 @@ const Hero = () => {
                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <HiPlay className="w-5 h-5 mr-2" />
-                View My Work
+                See Transformations
               </motion.button>
 
               <motion.button
@@ -139,7 +141,7 @@ const Hero = () => {
                 className="inline-flex items-center px-8 py-4 border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300"
               >
                 <HiMail className="w-5 h-5 mr-2" />
-                Get In Touch
+                Start a Conversation
               </motion.button>
             </motion.div>
 
@@ -151,9 +153,9 @@ const Hero = () => {
               className="flex justify-center lg:justify-start space-x-6"
             >
               {[
-                { Icon: FaGithub, href: "https://github.com/gauravThakur01", label: "GitHub" },
+                { Icon: FaGithub, href: "https://github.com/GauravThakur01", label: "GitHub" },
                 { Icon: FaLinkedin, href: "https://www.linkedin.com/in/gaurav-thakur-91509923a", label: "LinkedIn" },
-                { Icon: FaTwitter, href: "https://twitter.com/gauravthakur", label: "Twitter" },
+                { Icon: HiMail, href: "mailto:Gaurav.thakur@mspautomation.net", label: "Email" },
               ].map(({ Icon, href, label }) => (
                 <motion.a
                   key={label}

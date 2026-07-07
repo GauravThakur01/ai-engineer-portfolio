@@ -13,7 +13,7 @@ import {
   HiUser,
   HiChatAlt2
 } from 'react-icons/hi'
-import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaWhatsapp, FaGlobe } from 'react-icons/fa'
 
 interface FormData {
   name: string
@@ -52,30 +52,24 @@ const Contact = () => {
     {
       icon: HiMail,
       label: "Email",
-      value: "GauravThakur2350@gmail.com",
-      href: "mailto:GauravThakur2350@gmail.com"
+      value: "Gaurav.thakur@mspautomation.net",
+      href: "mailto:Gaurav.thakur@mspautomation.net"
     },
     {
       icon: HiPhone,
       label: "Phone",
-      value: "+91 7650941605",
-      href: "tel:+917650941605"
+      value: "+1 (561) 208-3804",
+      href: "tel:+15612083804"
     },
     {
       icon: HiLocationMarker,
-      label: "Location",
-      value: "Available Globally",
+      label: "Based",
+      value: "US · Working Globally",
       href: "#"
     }
   ]
 
   const socialLinks = [
-    {
-      icon: FaGithub,
-      label: "GitHub",
-      href: "https://github.com/gauravThakur01",
-      color: "hover:text-gray-900 dark:hover:text-white"
-    },
     {
       icon: FaLinkedin,
       label: "LinkedIn",
@@ -83,15 +77,21 @@ const Contact = () => {
       color: "hover:text-blue-600"
     },
     {
-      icon: FaTwitter,
-      label: "Twitter",
-      href: "https://twitter.com/gauravthakur",
-      color: "hover:text-blue-400"
+      icon: FaGithub,
+      label: "GitHub",
+      href: "https://github.com/GauravThakur01",
+      color: "hover:text-gray-900 dark:hover:text-white"
+    },
+    {
+      icon: FaGlobe,
+      label: "SKYTEK Cloud",
+      href: "https://skytek.cloud",
+      color: "hover:text-cyan-400"
     },
     {
       icon: FaWhatsapp,
       label: "WhatsApp",
-      href: "https://wa.me/917650941605",
+      href: "https://wa.me/15612083804",
       color: "hover:text-green-500"
     }
   ]
@@ -133,14 +133,14 @@ const Contact = () => {
         >
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/20 rounded-full mb-6">
             <HiChatAlt2 className="w-5 h-5 text-cyan-500 mr-2" />
-            <span className="text-gray-700 dark:text-gray-300 text-sm font-medium">Let's Connect</span>
+            <span className="text-gray-700 dark:text-gray-300 text-sm font-medium">Let's find your problem worth solving</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Get In <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Touch</span>
+            Have A Business Problem <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">That Smells Like AI?</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Ready to build the next generation of AI solutions? Let's discuss your project and explore how we can create something extraordinary together.
+            First conversation is a working session, not a sales call. Bring the problem, I'll bring the questions.
           </p>
         </motion.div>
 
@@ -154,10 +154,10 @@ const Contact = () => {
           >
             <motion.div variants={itemVariants} className="mb-8">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                Send a Message
+                Start The Conversation
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                I'm always excited to discuss new opportunities and innovative AI projects.
+                Advisory, transformation engagements, and hands-on architecture — a paragraph is enough to get started.
               </p>
             </motion.div>
 
@@ -214,7 +214,7 @@ const Contact = () => {
                   {...register('subject', { required: 'Subject is required' })}
                   type="text"
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
-                  placeholder="Project discussion, Collaboration, etc."
+                  placeholder="AI transformation, advisory engagement, architecture review, etc."
                 />
                 {errors.subject && (
                   <p className="mt-1 text-sm text-red-600">{errors.subject.message}</p>
@@ -229,7 +229,7 @@ const Contact = () => {
                   {...register('message', { required: 'Message is required' })}
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 resize-none"
-                  placeholder="Tell me about your project, goals, and how I can help..."
+                  placeholder="Tell me what's actually broken, what you've tried, and what a good outcome looks like. Rough is fine."
                 />
                 {errors.message && (
                   <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
@@ -252,7 +252,7 @@ const Contact = () => {
                   ) : (
                     <>
                       <HiPaperAirplane className="w-5 h-5 mr-2" />
-                      Send Message
+                      Send To Gaurav
                     </>
                   )}
                 </motion.button>
@@ -328,13 +328,13 @@ const Contact = () => {
                   <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-                  Currently Available
+                  Open To Advisory
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-3 text-sm">
-                  Open to new projects and collaborations
+                  Enterprise transformations, architecture reviews, and CoE build-outs
                 </p>
                 <div className="text-xs text-gray-500 dark:text-gray-400">
-                  Response time: Usually within 24 hours
+                  Response: usually within 24 hours
                 </div>
               </div>
             </motion.div>
@@ -342,24 +342,24 @@ const Contact = () => {
             {/* Quick Stats */}
             <motion.div variants={itemVariants} className="bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-xl border border-gray-200 dark:border-gray-700">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                Quick Stats
+                At A Glance
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-cyan-500 mb-1">50+</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">AI Projects</div>
+                  <div className="text-2xl font-bold text-cyan-500 mb-1">12+</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">AI Systems Live</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-purple-500 mb-1">3+</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Years Experience</div>
+                  <div className="text-2xl font-bold text-purple-500 mb-1">6+</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">Industries</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-500 mb-1">100%</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">Client Satisfaction</div>
+                  <div className="text-2xl font-bold text-green-500 mb-1">E2E</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">Idea → Deploy</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-orange-500 mb-1">24/7</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">AI Support</div>
+                  <div className="text-2xl font-bold text-orange-500 mb-1">1</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400">Accountable Owner</div>
                 </div>
               </div>
             </motion.div>

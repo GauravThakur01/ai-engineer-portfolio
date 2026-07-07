@@ -32,7 +32,20 @@ import {
   SiJupyter,
   SiAnaconda
 } from 'react-icons/si'
-import { HiChatAlt2, HiCode, HiLightBulb, HiChip } from 'react-icons/hi'
+import {
+  HiChatAlt2,
+  HiCode,
+  HiLightBulb,
+  HiChip,
+  HiUserGroup,
+  HiCog,
+  HiShieldCheck,
+  HiTrendingUp,
+  HiSparkles,
+  HiBriefcase,
+  HiOfficeBuilding,
+  HiAcademicCap,
+} from 'react-icons/hi'
 
 const Skills = () => {
   const [ref, inView] = useInView({
@@ -42,28 +55,52 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: "🏆 Core Expertise",
+      title: "🏆 Principal-Level Expertise",
       icon: "🎯",
       isHighlighted: true,
       skills: [
-        { name: "Prompt Engineering", icon: HiLightBulb, color: "from-yellow-400 to-orange-600", expertise: "Expert" },
-        { name: "Generative AI", icon: HiChip, color: "from-purple-400 to-pink-600", expertise: "Expert" },
-        { name: "OpenAI GPT Models", icon: SiOpenai, color: "from-green-400 to-emerald-600", expertise: "Expert" },
-        { name: "RAG Systems", icon: HiChatAlt2, color: "from-blue-400 to-cyan-600", expertise: "Expert" },
-        { name: "LangChain Framework", icon: SiPython, color: "from-yellow-400 to-orange-600", expertise: "Advanced" },
-        { name: "AI Voice Agents", icon: SiTwilio, color: "from-red-400 to-pink-600", expertise: "Expert" },
+        { name: "AI Strategy & Transformation", icon: HiTrendingUp, color: "from-yellow-400 to-orange-600", expertise: "Expert" },
+        { name: "Enterprise Solution Architecture", icon: HiOfficeBuilding, color: "from-blue-400 to-cyan-600", expertise: "Expert" },
+        { name: "Executive & Stakeholder Alignment", icon: HiChatAlt2, color: "from-pink-400 to-rose-600", expertise: "Expert" },
+        { name: "Generative & Agentic AI", icon: HiSparkles, color: "from-purple-400 to-pink-600", expertise: "Expert" },
+        { name: "AI Team Leadership & CoE Design", icon: HiUserGroup, color: "from-green-400 to-emerald-600", expertise: "Expert" },
+        { name: "LLMOps, Evals & Guardrails", icon: HiShieldCheck, color: "from-red-400 to-pink-600", expertise: "Expert" },
       ]
     },
     {
-      title: "AI & Machine Learning",
+      title: "Generative AI & LLM Stack",
+      icon: "🧠",
+      skills: [
+        { name: "OpenAI (GPT-4o, o-series)", icon: SiOpenai, color: "from-green-400 to-emerald-600" },
+        { name: "Azure OpenAI Service", icon: SiMicrosoft, color: "from-blue-500 to-cyan-600" },
+        { name: "Anthropic Claude", icon: HiSparkles, color: "from-orange-400 to-amber-600" },
+        { name: "LangChain & LlamaIndex", icon: SiPython, color: "from-yellow-400 to-orange-600" },
+        { name: "RAG & Vector Retrieval", icon: HiChatAlt2, color: "from-blue-400 to-cyan-600" },
+        { name: "Multi-Agent Orchestration", icon: HiCog, color: "from-purple-400 to-pink-600" },
+      ]
+    },
+    {
+      title: "AI/ML Foundations",
       icon: "🤖",
       skills: [
-        { name: "OpenAI API Integration", icon: SiOpenai, color: "from-green-400 to-emerald-600" },
-        { name: "Whisper Speech-to-Text", icon: SiOpenai, color: "from-green-400 to-emerald-600" },
-        { name: "Vector Databases", icon: SiPostgresql, color: "from-purple-400 to-pink-600" },
+        { name: "Prompt & Context Engineering", icon: HiLightBulb, color: "from-yellow-400 to-orange-600" },
+        { name: "Whisper & Speech AI", icon: SiOpenai, color: "from-green-400 to-emerald-600" },
+        { name: "Fine-tuning & LoRA", icon: HiChip, color: "from-purple-400 to-pink-600" },
         { name: "TensorFlow", icon: SiTensorflow, color: "from-orange-400 to-red-600" },
         { name: "PyTorch", icon: SiPytorch, color: "from-red-400 to-pink-600" },
         { name: "Hugging Face", icon: SiGit, color: "from-yellow-400 to-orange-600" },
+      ]
+    },
+    {
+      title: "Cloud & Platform Engineering",
+      icon: "☁️",
+      skills: [
+        { name: "Microsoft Azure (Primary)", icon: SiMicrosoft, color: "from-blue-500 to-cyan-600" },
+        { name: "AWS", icon: SiAmazonaws, color: "from-orange-400 to-yellow-600" },
+        { name: "Google Cloud", icon: SiGooglecloud, color: "from-blue-400 to-red-500" },
+        { name: "Docker & Containers", icon: SiDocker, color: "from-blue-400 to-cyan-600" },
+        { name: "Kubernetes / AKS", icon: SiKubernetes, color: "from-blue-600 to-purple-600" },
+        { name: "Zero-Trust & Compliance", icon: HiShieldCheck, color: "from-gray-700 to-black" },
       ]
     },
     {
@@ -75,7 +112,7 @@ const Skills = () => {
         { name: "Node.js", icon: SiNodedotjs, color: "from-green-500 to-emerald-600" },
         { name: "Express.js", icon: SiExpress, color: "from-gray-600 to-gray-800" },
         { name: "Flask", icon: SiFlask, color: "from-gray-700 to-gray-900" },
-        { name: "PostgreSQL", icon: SiPostgresql, color: "from-blue-600 to-indigo-700" },
+        { name: "REST / WebSockets / GraphQL", icon: HiCode, color: "from-green-400 to-teal-600" },
       ]
     },
     {
@@ -87,55 +124,31 @@ const Skills = () => {
         { name: "TypeScript", icon: SiTypescript, color: "from-blue-500 to-blue-700" },
         { name: "Tailwind CSS", icon: SiTailwindcss, color: "from-cyan-400 to-teal-600" },
         { name: "JavaScript", icon: SiJavascript, color: "from-yellow-400 to-orange-600" },
-        { name: "HTML/CSS", icon: HiCode, color: "from-orange-400 to-red-500" },
+        { name: "HTML / CSS", icon: HiCode, color: "from-orange-400 to-red-500" },
       ]
     },
     {
-      title: "Cloud & DevOps",
-      icon: "☁️",
+      title: "Data & Automation",
+      icon: "🔀",
       skills: [
-        { name: "Microsoft Azure", icon: SiMicrosoft, color: "from-blue-500 to-cyan-600" },
-        { name: "AWS", icon: SiAmazonaws, color: "from-orange-400 to-yellow-600" },
-        { name: "Google Cloud", icon: SiGooglecloud, color: "from-blue-400 to-red-500" },
-        { name: "Docker", icon: SiDocker, color: "from-blue-400 to-cyan-600" },
-        { name: "Kubernetes", icon: SiKubernetes, color: "from-blue-600 to-purple-600" },
-        { name: "Linux", icon: SiLinux, color: "from-gray-700 to-black" },
-      ]
-    },
-    {
-      title: "Development Tools",
-      icon: "🛠️",
-      skills: [
-        { name: "VS Code", icon: SiVisualstudiocode, color: "from-blue-500 to-blue-700" },
-        { name: "GitHub", icon: SiGithub, color: "from-gray-700 to-black" },
-        { name: "Jupyter Notebooks", icon: SiJupyter, color: "from-orange-400 to-red-500" },
-        { name: "Anaconda", icon: SiAnaconda, color: "from-green-500 to-emerald-600" },
-        { name: "Git", icon: SiGit, color: "from-orange-500 to-red-600" },
-        { name: "Redis", icon: SiRedis, color: "from-red-500 to-pink-600" },
-      ]
-    },
-    {
-      title: "Databases & Storage",
-      icon: "💾",
-      skills: [
+        { name: "n8n Workflow Automation", icon: HiCog, color: "from-pink-400 to-rose-600" },
+        { name: "Power Platform", icon: SiMicrosoft, color: "from-blue-500 to-cyan-600" },
         { name: "PostgreSQL", icon: SiPostgresql, color: "from-blue-600 to-indigo-700" },
         { name: "MongoDB", icon: SiMongodb, color: "from-green-500 to-emerald-600" },
-        { name: "Pinecone", icon: HiCode, color: "from-purple-500 to-pink-600" },
+        { name: "Vector DBs (Pinecone, pgvector)", icon: HiChip, color: "from-purple-400 to-pink-600" },
         { name: "Redis Cache", icon: SiRedis, color: "from-red-500 to-pink-600" },
-        { name: "Vector DBs", icon: SiPostgresql, color: "from-purple-400 to-pink-600" },
-        { name: "Data Warehousing", icon: SiPostgresql, color: "from-yellow-500 to-orange-600" },
       ]
     },
     {
-      title: "Communication APIs",
-      icon: "📞",
+      title: "Delivery & Leadership",
+      icon: "🎓",
       skills: [
-        { name: "Twilio Voice", icon: SiTwilio, color: "from-red-400 to-pink-600" },
-        { name: "OpenAI Whisper", icon: SiOpenai, color: "from-green-400 to-emerald-600" },
-        { name: "WebRTC", icon: HiCode, color: "from-blue-400 to-cyan-600" },
-        { name: "REST APIs", icon: HiCode, color: "from-green-400 to-teal-600" },
-        { name: "WebSockets", icon: HiCode, color: "from-purple-400 to-indigo-600" },
-        { name: "GraphQL", icon: HiCode, color: "from-pink-400 to-rose-600" },
+        { name: "Hiring & Team Building", icon: HiUserGroup, color: "from-cyan-400 to-blue-600" },
+        { name: "Executive Advisory", icon: HiBriefcase, color: "from-purple-500 to-pink-600" },
+        { name: "Change Management", icon: HiTrendingUp, color: "from-green-400 to-emerald-600" },
+        { name: "Upskilling & Enablement", icon: HiAcademicCap, color: "from-yellow-400 to-orange-600" },
+        { name: "Roadmap & OKR Design", icon: HiLightBulb, color: "from-orange-400 to-red-500" },
+        { name: "Vendor & Build-vs-Buy Strategy", icon: HiOfficeBuilding, color: "from-blue-500 to-indigo-700" },
       ]
     }
   ]
@@ -151,10 +164,10 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Technical <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Arsenal</span>
+            Full-Stack, <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">In The Widest Sense</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            The cutting-edge technologies I use to build AI systems that transform businesses
+            From the boardroom framing of a problem to the observability stack that keeps the answer alive at 3 a.m.
           </p>
         </motion.div>
 
@@ -256,19 +269,19 @@ const Skills = () => {
           className="mt-16 bg-gradient-to-r from-cyan-500/10 to-purple-600/10 rounded-3xl p-8 border border-cyan-500/20"
         >
           <h3 className="text-2xl font-bold text-center mb-8">
-            <span className="cyber-text">Expertise Levels</span>
+            <span className="cyber-text">Where I Operate Deepest</span>
           </h3>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">98%</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Prompt Engineering & Gen AI
+                AI Strategy & Architecture
               </h4>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Expert level in designing prompts and building generative AI solutions
+                From problem framing to signed architecture — pricing, risk, and ROI baked in
               </p>
             </div>
 
@@ -277,22 +290,22 @@ const Skills = () => {
                 <span className="text-white font-bold text-xl">95%</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                AI/ML & Voice Systems
+                GenAI, Agents & LLMOps
               </h4>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Expert level in building production-ready AI agents and voice systems
+                Agentic systems, RAG, evals, and guardrails that survive real production
               </p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">90%</span>
+                <span className="text-white font-bold text-xl">92%</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Backend & Cloud Development
+                Leadership & Enablement
               </h4>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Advanced Python, FastAPI, and cloud architecture skills
+                Standing up AI teams and centers of excellence so capability outlives the engagement
               </p>
             </div>
           </div>

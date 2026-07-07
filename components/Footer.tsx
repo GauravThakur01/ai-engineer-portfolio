@@ -1,16 +1,16 @@
 "use client"
 
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaGlobe, FaHeart } from 'react-icons/fa'
 import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: FaGithub, href: "https://github.com/gauravThakur01", label: "GitHub" },
     { icon: FaLinkedin, href: "https://www.linkedin.com/in/gaurav-thakur-91509923a", label: "LinkedIn" },
-    { icon: FaTwitter, href: "https://twitter.com/gauravthakur", label: "Twitter" },
+    { icon: FaGithub, href: "https://github.com/GauravThakur01", label: "GitHub" },
+    { icon: FaGlobe, href: "https://skytek.cloud", label: "SKYTEK Cloud" },
   ]
 
   const quickLinks = [
@@ -52,9 +52,9 @@ const Footer = () => {
                   </span>
                 </div>
                 <p className="text-gray-400 text-lg leading-relaxed max-w-md">
-                  <span className="text-cyan-400 font-semibold">AI That Listens. AI That Remembers.</span>
+                  <span className="text-cyan-400 font-semibold">Business problem in. Production AI out.</span>
                   <br />
-                  Building intelligent voice agents and RAG chatbots that transform how businesses interact with technology.
+                  Principal AI Architect &amp; Head of AI Transformation — end-to-end from strategy to the team that runs the system after I've moved on.
                 </p>
               </motion.div>
 
@@ -65,17 +65,17 @@ const Footer = () => {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="space-y-3"
               >
-                <div className="flex items-center text-gray-400">
+                <a href="mailto:Gaurav.thakur@mspautomation.net" className="flex items-center text-gray-400 hover:text-cyan-400 transition-colors">
                   <HiMail className="w-5 h-5 mr-3 text-cyan-400" />
-                  <span>GauravThakur2350@gmail.com</span>
-                </div>
-                <div className="flex items-center text-gray-400">
+                  <span>Gaurav.thakur@mspautomation.net</span>
+                </a>
+                <a href="tel:+15612083804" className="flex items-center text-gray-400 hover:text-cyan-400 transition-colors">
                   <HiPhone className="w-5 h-5 mr-3 text-cyan-400" />
-                  <span>+91 7650941605</span>
-                </div>
+                  <span>+1 (561) 208-3804</span>
+                </a>
                 <div className="flex items-center text-gray-400">
                   <HiLocationMarker className="w-5 h-5 mr-3 text-cyan-400" />
-                  <span>Available Globally</span>
+                  <span>US · Working Globally</span>
                 </div>
               </motion.div>
             </div>
@@ -126,11 +126,11 @@ const Footer = () => {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="space-y-3 text-gray-400"
               >
-                <li>AI Voice Agents</li>
-                <li>RAG Chatbots</li>
-                <li>Automation Systems</li>
-                <li>Cloud Architecture</li>
-                <li>AI Consulting</li>
+                <li>AI Strategy &amp; Transformation</li>
+                <li>Enterprise Solution Architecture</li>
+                <li>Agentic Systems &amp; RAG Platforms</li>
+                <li>LLMOps, Evals &amp; Guardrails</li>
+                <li>AI Team &amp; CoE Build-out</li>
               </motion.ul>
             </div>
           </div>
@@ -165,10 +165,11 @@ const Footer = () => {
               
               <div className="text-center md:text-right">
                 <p className="text-gray-400 mb-2">
-                  © {currentYear} Gaurav Thakur. All rights reserved.
+                  © {currentYear} Gaurav Thakur — Principal AI Architect &amp; Head of AI Transformation
                 </p>
                 <p className="text-gray-500 text-sm flex items-center justify-center md:justify-end">
-                  Built with <FaHeart className="w-4 h-4 mx-1 text-red-500" /> and cutting-edge tech
+                  Powered by <a href="https://skytek.cloud" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline mx-1">SKYTEK Cloud</a>
+                  <FaHeart className="w-3 h-3 mx-1 text-red-500" /> AI-Powered IT since 2012
                 </p>
               </div>
             </div>

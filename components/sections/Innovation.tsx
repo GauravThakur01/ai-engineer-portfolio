@@ -12,36 +12,36 @@ const Innovation = () => {
 
   const innovations = [
     {
-      title: "Autonomous Agent Decision Trees",
-      description: "Building AI agents that can make complex decisions autonomously, adapting to changing conditions and learning from interactions to improve decision-making over time.",
+      title: "Fully Autonomous Service Operations",
+      description: "Multi-agent systems that own routine incidents end-to-end — triage, diagnose, resolve, document — with humans reserved for the judgment calls only humans should own. The next frontier of self-driving IT.",
       icon: HiCog,
       color: "from-blue-500 to-cyan-500",
-      status: "Research Phase",
-      timeline: "Q2 2025"
+      status: "Live pilots · scaling",
+      timeline: "Now → 2026"
     },
     {
-      title: "Self-Healing Infrastructure Workflows",
-      description: "Developing AI-powered systems that can detect, diagnose, and automatically resolve infrastructure issues before they impact users, creating truly autonomous operations.",
+      title: "Enterprise-Grade Agent Governance",
+      description: "The missing operating system for agentic AI in regulated environments: identity, permissions, cost caps, red-team evals, and full audit trails — so agents earn the right to run at 3 a.m.",
       icon: HiShieldCheck,
       color: "from-green-500 to-emerald-500",
-      status: "Prototype Development",
-      timeline: "Q3 2025"
+      status: "Building",
+      timeline: "2026"
     },
     {
-      title: "Dynamic Vector Data Curation",
-      description: "Creating intelligent systems that automatically curate, update, and optimize vector databases based on usage patterns, relevance scoring, and real-time feedback loops.",
+      title: "Self-Curating Knowledge Fabric",
+      description: "Vector estates that curate themselves — de-duplicate, freshness-score, and prune based on real usage. The end of stale RAG answers and the birth of knowledge platforms leaders can actually trust.",
       icon: HiDatabase,
       color: "from-purple-500 to-pink-500",
-      status: "Concept Validation",
-      timeline: "Q4 2025"
+      status: "R&D",
+      timeline: "2026"
     },
     {
-      title: "Role-Based Data Access in AI Systems",
-      description: "Implementing advanced security frameworks that allow AI systems to dynamically adapt their knowledge and responses based on user roles, permissions, and organizational hierarchy.",
+      title: "AI That Adapts To Who's Asking",
+      description: "Role-, region-, and risk-aware AI: dynamic retrieval and response scopes bound to identity and compliance context. Same platform. Every user gets the truth they're allowed to see.",
       icon: HiShieldCheck,
       color: "from-orange-500 to-red-500",
-      status: "Design Phase",
-      timeline: "Q1 2026"
+      status: "Design",
+      timeline: "2026"
     }
   ]
 
@@ -81,14 +81,14 @@ const Innovation = () => {
         >
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/20 rounded-full mb-6">
             <HiLightBulb className="w-5 h-5 text-cyan-500 mr-2" />
-            <span className="text-gray-700 dark:text-gray-300 text-sm font-medium">Innovation Pipeline</span>
+            <span className="text-gray-700 dark:text-gray-300 text-sm font-medium">Bets I'm Making Right Now</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Future <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Innovations</span>
+            Where AI Goes <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Next</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Pushing the boundaries of AI technology with cutting-edge research and development
+            The four transformation bets I'm actively architecting for enterprise — not demos, not decks. Real platforms, real budgets.
           </p>
         </motion.div>
 
@@ -173,28 +173,27 @@ const Innovation = () => {
             </div>
             
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-              <span className="cyber-text">Innovation Philosophy</span>
+              <span className="cyber-text">The Operating Belief</span>
             </h3>
-            
+
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-              "The future of AI isn't just about making machines smarter—it's about making them more intuitive, 
-              more adaptive, and more aligned with human needs. Every innovation I pursue is driven by the goal 
-              of creating AI that doesn't just process data, but truly understands context, builds relationships, 
-              and evolves with its users."
+              "The next decade of AI won't be won by the most powerful model — it will be won by the leaders who
+              can name the problem worth solving, ship the answer through a real production floor, and leave
+              behind a team that keeps shipping. That's the discipline. That's the whole job."
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-cyan-500 mb-2">4+</div>
-                <div className="text-gray-600 dark:text-gray-400">Active Research Projects</div>
+                <div className="text-3xl font-bold text-cyan-500 mb-2">4</div>
+                <div className="text-gray-600 dark:text-gray-400">Active Transformation Bets</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-500 mb-2">∞</div>
-                <div className="text-gray-600 dark:text-gray-400">Possibilities to Explore</div>
+                <div className="text-3xl font-bold text-purple-500 mb-2">6+</div>
+                <div className="text-gray-600 dark:text-gray-400">Industries Live</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-pink-500 mb-2">2025+</div>
-                <div className="text-gray-600 dark:text-gray-400">Timeline for Innovation</div>
+                <div className="text-3xl font-bold text-pink-500 mb-2">2026</div>
+                <div className="text-gray-600 dark:text-gray-400">Horizon In Delivery</div>
               </div>
             </div>
           </div>
@@ -208,7 +207,7 @@ const Innovation = () => {
           className="text-center mt-12"
         >
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-            Interested in collaborating on cutting-edge AI research?
+            Have a business problem that smells like AI? Let's find out.
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -220,7 +219,7 @@ const Innovation = () => {
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <HiLightBulb className="w-5 h-5 mr-2" />
-            Let's Innovate Together
+            Book a Working Session
           </motion.button>
         </motion.div>
       </div>

@@ -14,47 +14,47 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Real-Time AI Voice Dispatch Assistant",
-      subtitle: "The First AI Engineer Who Picks Up Your Call",
-      description: "A revolutionary real-time AI voice agent that acts as the first responder for MSP support calls. Intelligently listens, extracts details, analyzes urgency, creates tickets in HaloPSA, and routes to engineers—all in under 15 seconds.",
+      title: "Autonomous Service Operations Platform",
+      subtitle: "AI as the First Responder for Enterprise Support",
+      description: "A production agentic layer that acts as the first responder for enterprise support: listens in real time, extracts intent, checks urgency against runbooks, opens tickets in the PSA, and routes to a human only when the AI can't safely resolve. Live inside a security-first MSP serving businesses since 2012.",
       features: [
-        "Fully SIP-integrated with Twilio and Asterisk",
-        "OpenAI Whisper for speech-to-text conversion",
-        "GPT-4o for intelligent prompt processing",
-        "Real-time voice responses using OpenAI Speech API",
-        "Secure webhook-based communication",
-        "Azure-hosted backend with global availability"
+        "SIP-integrated voice front door with Twilio & Asterisk",
+        "GPT-4o reasoning with tool-use and structured outputs",
+        "Human-in-the-loop escalation with full audit trail",
+        "Guardrails, evals, and observability from day one",
+        "Azure-hosted, zero-trust network posture",
+        "Deep integration with PSA, RMM, and identity stack"
       ],
       tech: [
-        { name: "OpenAI Whisper", icon: SiOpenai },
+        { name: "Agentic AI", icon: SiOpenai },
         { name: "GPT-4o", icon: SiOpenai },
         { name: "Twilio SIP", icon: SiTwilio },
         { name: "FastAPI", icon: SiFastapi },
         { name: "Azure", icon: SiMicrosoft },
         { name: "Python", icon: SiPython }
       ],
-      status: "Internal | Demo on request",
+      status: "Live in production | Demo on request",
       isInternal: true,
       gradient: "from-blue-500 to-cyan-500",
       icon: "🎙️",
       metrics: [
-        { label: "Response Time", value: "< 5s" },
-        { label: "Accuracy", value: "95%" },
+        { label: "L1 Auto-Resolved", value: "60%" },
+        { label: "Mean Time to Resolve", value: "−45%" },
         { label: "Uptime", value: "99.9%" }
       ]
     },
     {
       id: 2,
-      title: "RAG-Based AI Knowledge Chatbot",
-      subtitle: "ChatGPT for Your Organization — With Access Control",
-      description: "Production-grade Retrieval-Augmented Generation chatbot enabling secure internal documentation queries. Features multi-organization isolation, advanced vector search, and real-time responses for 40-50 concurrent users.",
+      title: "Enterprise Knowledge Copilot (RAG)",
+      subtitle: "ChatGPT For Your Company — With Access Control That CISOs Sign",
+      description: "Production RAG platform serving multi-tenant departments with clause-level citations, role-based retrieval, and full audit logs. Designed so answers are not just correct — they are provably correct, traceable to source, and safe to expose to auditors.",
       features: [
-        "Built with LangChain and GPT-4o integration",
-        "Secure vector isolation with dynamic namespaces",
-        "Multi-tenant architecture with department separation",
+        "LangChain + GPT-4o with dynamic per-tenant namespaces",
+        "Row-level access control mapped to identity provider",
         "Chat memory with intelligent summarization",
-        "React frontend with dark mode and streaming",
-        "Kubernetes deployment on Azure AKS"
+        "Streaming React frontend, dark-mode by default",
+        "Kubernetes deployment on Azure AKS",
+        "Full evals, red-team, and citation traceability"
       ],
       tech: [
         { name: "React", icon: SiReact },
@@ -64,28 +64,28 @@ const Projects = () => {
         { name: "Azure AKS", icon: SiMicrosoft },
         { name: "Pinecone", icon: SiPython }
       ],
-      status: "Internal | Code sample available privately",
+      status: "Live in production | Code sample on request",
       isInternal: true,
       gradient: "from-purple-500 to-pink-500",
       icon: "🧠",
       metrics: [
         { label: "Concurrent Users", value: "40-50" },
-        { label: "Query Speed", value: "< 2s" },
-        { label: "Accuracy", value: "92%" }
+        { label: "Query Latency", value: "< 2s" },
+        { label: "Cited Accuracy", value: "92%" }
       ]
     },
     {
       id: 3,
-      title: "AI-Powered QA Automation System",
-      subtitle: "Making Quality Audits Autonomous",
-      description: "Automated pipeline analyzing technical support conversations using AI. Evaluates SOP adherence, tonal quality, and response accuracy—reducing human review time by 80% while maintaining quality standards.",
+      title: "AI Quality Assurance & Coaching Engine",
+      subtitle: "Making Quality Audits Autonomous — Not Just Cheaper",
+      description: "An automated review pipeline that transcribes, evaluates, and scores support conversations against SOP, tone, and outcome — then feeds coaching prompts back to individual engineers. Cut human QA review time by 80% while raising, not lowering, standards.",
       features: [
-        "Automatic transcription of call recordings",
-        "GPT-4o review against SOP checklist",
-        "Advanced scoring logic and analytics",
-        "Daily performance summaries and insights",
-        "Integration with existing QA workflows",
-        "Custom review application with feedback loops"
+        "Automatic transcription of call and chat recordings",
+        "GPT-4o review against SOP + tone + resolution rubric",
+        "Advanced scoring with per-engineer coaching output",
+        "Daily leader summaries with trend detection",
+        "Integrates with existing QA and HR workflows",
+        "Feedback loop to continuously refine the rubric"
       ],
       tech: [
         { name: "OpenAI Whisper", icon: SiOpenai },
@@ -95,36 +95,54 @@ const Projects = () => {
         { name: "Python", icon: SiPython },
         { name: "Azure", icon: SiMicrosoft }
       ],
-      status: "Internal Preview",
+      status: "Live | Rolling out to additional teams",
       isInternal: false,
       gradient: "from-green-500 to-teal-500",
       icon: "🧪",
       metrics: [
-        { label: "Time Reduction", value: "80%" },
-        { label: "Processing Speed", value: "5x faster" },
-        { label: "Accuracy", value: "94%" }
+        { label: "Review Time Reduced", value: "80%" },
+        { label: "Processing Speed", value: "5× faster" },
+        { label: "Rubric Accuracy", value: "94%" }
       ]
     }
   ]
 
   const additionalProjects = [
     {
-      title: "Onboarding + Offboarding Automation",
-      description: "Fully automated identity lifecycle across Entra ID, Meraki, and Azure using PowerShell + Forms",
-      tech: ["PowerShell", "Microsoft Forms", "Entra ID", "Azure"],
+      title: "Identity Lifecycle Automation",
+      description: "Zero-touch onboarding and offboarding across Entra ID, Intune, and Azure — from Forms trigger to signed-off audit trail",
+      tech: ["PowerShell", "Entra ID", "Intune", "Azure", "MS Forms"],
       icon: "⚡"
     },
     {
-      title: "SOC Alert Response Automation",
-      description: "Form-based alert confirmation to auto-suppress noise and enrich alert context with location intelligence",
-      tech: ["Power Automate", "Security APIs", "Location Services"],
+      title: "SOC Response Copilot",
+      description: "Form-based alert confirmation with location intelligence and auto-suppression — turns MDR/SIEM noise into signal in seconds",
+      tech: ["Power Automate", "Sentinel", "Location APIs"],
       icon: "🔒"
     },
     {
-      title: "Billing + Cost Optimization Dashboards",
-      description: "Power BI dashboards with MySQL data models for cost tracking and profitability analysis",
-      tech: ["Power BI", "MySQL", "Data Analytics", "Azure"],
+      title: "Profitability & FinOps Dashboards",
+      description: "Executive-grade Power BI dashboards on top of MySQL models — client-level margin, cost drift, and AI-driven anomaly flags",
+      tech: ["Power BI", "MySQL", "Azure", "Anomaly Detection"],
       icon: "📊"
+    },
+    {
+      title: "Document Intelligence for Compliance",
+      description: "Retrieval + extraction platform with clause-level citations and human checkpoints — turned days of review into minutes, audit-ready by construction",
+      tech: ["RAG", "GPT-4o", "Vector Search", "Audit"],
+      icon: "📄"
+    },
+    {
+      title: "Revenue Operations Agent Platform",
+      description: "Multi-agent layer for lead enrichment, proposal drafting, and forecast hygiene — sales ops as a background process",
+      tech: ["Multi-Agent", "CRM APIs", "n8n", "Analytics"],
+      icon: "🎯"
+    },
+    {
+      title: "AI Enablement & CoE Design",
+      description: "Stood up an internal AI Center of Excellence: hiring plan, tooling stack, evals culture, and shipping cadence — capability that outlives me",
+      tech: ["Team Building", "Playbooks", "Enablement", "Governance"],
+      icon: "🏛️"
     }
   ]
 
@@ -160,10 +178,10 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Featured <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Projects</span>
+            Selected <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Transformations</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Transforming ideas into intelligent systems that deliver real-world impact
+            End-to-end systems that survived contact with reality — real users, real audits, real 3 a.m. incidents.
           </p>
         </motion.div>
 
@@ -278,7 +296,7 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <h3 className="text-3xl font-bold text-center mb-8">
-            <span className="cyber-text">Additional Projects</span>
+            <span className="cyber-text">Also In Production</span>
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {additionalProjects.map((project, index) => (
