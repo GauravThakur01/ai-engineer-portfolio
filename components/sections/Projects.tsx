@@ -109,6 +109,12 @@ const Projects = () => {
 
   const additionalProjects = [
     {
+      title: "Saava.ai — Conversational AI Lead Engine",
+      description: "Dual-agent platform — Ava handles inbound web chat, voice, and live avatar; Adam calls back within minutes via Twilio. n8n backbone orchestrates quoting, PSA ticketing, and category-routed email. Live with customers; being spun out as a standalone SaaS.",
+      tech: ["ElevenLabs ConvAI", "HeyGen Avatar", "Twilio", "n8n", "MS Graph", "Autotask PSA"],
+      icon: "💬"
+    },
+    {
       title: "Identity Lifecycle Automation",
       description: "Zero-touch onboarding and offboarding across Entra ID, Intune, and Azure — from Forms trigger to signed-off audit trail",
       tech: ["PowerShell", "Entra ID", "Intune", "Azure", "MS Forms"],
@@ -137,12 +143,6 @@ const Projects = () => {
       description: "Multi-agent layer for lead enrichment, proposal drafting, and forecast hygiene — sales ops as a background process",
       tech: ["Multi-Agent", "CRM APIs", "n8n", "Analytics"],
       icon: "🎯"
-    },
-    {
-      title: "AI Enablement & CoE Design",
-      description: "Stood up an internal AI Center of Excellence: hiring plan, tooling stack, evals culture, and shipping cadence — capability that outlives me",
-      tech: ["Team Building", "Playbooks", "Enablement", "Governance"],
-      icon: "🏛️"
     }
   ]
 
