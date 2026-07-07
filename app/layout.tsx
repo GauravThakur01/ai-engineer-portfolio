@@ -4,11 +4,11 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from 'react-hot-toast'
 
 export const metadata: Metadata = {
-  title: 'Gaurav Thakur — Principal AI Architect & Head of AI Transformation',
-  description: 'Principal AI Architect and Head of AI Transformation at SKYTEK Cloud. I identify the business problem worth solving, align stakeholders, and take the answer end-to-end — strategy, architecture, build, deployment, and the team that runs it.',
+  title: 'Gaurav Thakur — Head of AI Transformation & Principal AI Architect',
+  description: 'Head of AI Transformation & Principal AI Architect at SKYTEK Solutions, LLC. I identify the business problem worth solving, align stakeholders, and take the answer end-to-end — strategy, architecture, build, deployment, and the team that runs it.',
   keywords: [
-    'Principal AI Architect',
     'Head of AI Transformation',
+    'Principal AI Architect',
     'AI Strategy',
     'Enterprise AI',
     'Generative AI',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'Solution Architecture',
     'Azure',
     'OpenAI',
-    'SKYTEK Cloud',
+    'SKYTEK Solutions',
     'AI Consulting',
     'Digital Transformation',
     'MLOps',
@@ -34,10 +34,10 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://gauravthakur.mspautomation.net'),
   openGraph: {
-    title: 'Gaurav Thakur — Principal AI Architect & Head of AI Transformation',
+    title: 'Gaurav Thakur — Head of AI Transformation & Principal AI Architect',
     description: 'From boardroom to production. I translate business problems into AI systems that ship — strategy, architecture, build, deploy, and the team to run it.',
     url: 'https://gauravthakur.mspautomation.net',
-    siteName: 'Gaurav Thakur — Principal AI Architect',
+    siteName: 'Gaurav Thakur — Head of AI Transformation',
     locale: 'en_US',
     type: 'website',
     images: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: '/gaurav-profile.jpg',
         width: 1200,
         height: 630,
-        alt: 'Gaurav Thakur — Principal AI Architect & Head of AI Transformation',
+        alt: 'Gaurav Thakur — Head of AI Transformation & Principal AI Architect',
       },
     ],
   },
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Gaurav Thakur — Principal AI Architect & Head of AI Transformation',
+    title: 'Gaurav Thakur — Head of AI Transformation & Principal AI Architect',
     description: 'Business problem in. Production AI out. Enterprise AI transformation — end-to-end.',
     creator: '@gauravthakur',
     images: ['/gaurav-profile.jpg'],

@@ -10,7 +10,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: FaLinkedin, href: "https://www.linkedin.com/in/gaurav-thakur-91509923a", label: "LinkedIn" },
     { icon: FaGithub, href: "https://github.com/GauravThakur01", label: "GitHub" },
-    { icon: FaGlobe, href: "https://skytek.cloud", label: "SKYTEK Cloud" },
+    { icon: FaGlobe, href: "https://skytek.cloud", label: "SKYTEK Solutions" },
   ]
 
   const quickLinks = [
@@ -54,7 +54,7 @@ const Footer = () => {
                 <p className="text-gray-400 text-lg leading-relaxed max-w-md">
                   <span className="text-cyan-400 font-semibold">Business problem in. Production AI out.</span>
                   <br />
-                  Principal AI Architect &amp; Head of AI Transformation — end-to-end from strategy to the team that runs the system after I've moved on.
+                  Head of AI Transformation &amp; Principal AI Architect — end-to-end from strategy to the team that runs the system after I've moved on.
                 </p>
               </motion.div>
 
@@ -165,10 +165,10 @@ const Footer = () => {
               
               <div className="text-center md:text-right">
                 <p className="text-gray-400 mb-2">
-                  © {currentYear} Gaurav Thakur — Principal AI Architect &amp; Head of AI Transformation
+                  © {currentYear} Gaurav Thakur — Head of AI Transformation &amp; Principal AI Architect
                 </p>
                 <p className="text-gray-500 text-sm flex items-center justify-center md:justify-end">
-                  Powered by <a href="https://skytek.cloud" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline mx-1">SKYTEK Cloud</a>
+                  Powered by <a href="https://skytek.cloud" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline mx-1">SKYTEK Solutions, LLC</a>
                   <FaHeart className="w-3 h-3 mx-1 text-red-500" /> AI-Powered IT since 2012
                 </p>
               </div>

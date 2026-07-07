@@ -66,7 +66,7 @@ const Hero = () => {
               className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/20 rounded-full mb-6"
             >
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></span>
-              <span className="text-gray-700 dark:text-gray-300 text-sm">Principal AI Architect · Head of AI Transformation · SKYTEK Cloud</span>
+              <span className="text-gray-700 dark:text-gray-300 text-sm">Head of AI Transformation &amp; Principal AI Architect · SKYTEK Solutions, LLC</span>
             </motion.div>
 
             {/* Typewriter Effect */}

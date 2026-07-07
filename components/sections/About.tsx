@@ -97,7 +97,7 @@ const About = () => {
                 🏛️ <span className="cyber-text">Where I Sharpen It</span>
               </h4>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                At <span className="text-gray-900 dark:text-white font-semibold">SKYTEK Cloud</span> I lead the AI transformation practice for a
+                At <span className="text-gray-900 dark:text-white font-semibold">SKYTEK Solutions, LLC</span> I lead the AI transformation practice for a
                 security-first MSP that's served businesses since 2012 — which means everything I ship has to
                 survive real users, real audits, and real 3 a.m. incidents. That discipline travels with me into
                 every industry I work in: finance, healthcare, professional services, logistics, and beyond.

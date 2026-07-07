@@ -84,7 +84,7 @@ const Contact = () => {
     },
     {
       icon: FaGlobe,
-      label: "SKYTEK Cloud",
+      label: "SKYTEK Solutions",
       href: "https://skytek.cloud",
       color: "hover:text-cyan-400"
     },

@@ -77,7 +77,7 @@ const Navigation = () => {
                 Gaurav Thakur
               </span>
               <span className="hidden sm:inline text-[10px] tracking-widest uppercase text-gray-500 dark:text-gray-400">
-                Principal AI Architect · SKYTEK Cloud
+                Head of AI Transformation · SKYTEK Solutions
               </span>
             </div>
           </motion.div>
